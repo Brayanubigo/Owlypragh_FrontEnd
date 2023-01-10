@@ -68,9 +68,7 @@ const Login = () => {
             <input className="border w-72 p-3 mt-3 rounded-xl" type="password" placeholder="Tu contraseña" value={password} onChange={e => setPassword(e.target.value)} />
             <button className=" border-2 bg-blue-500 w-full font-bold text-white py-4 mt-10 rounded transition-colors hover:bg-black hover:text-white" type="submit"> Login</button>
           </form>
-          <nav>
-            <Link to="/olvide-password">¿Olvidaste la contraseña?</Link>
-          </nav>
+       
         </div>
 
       </div>
