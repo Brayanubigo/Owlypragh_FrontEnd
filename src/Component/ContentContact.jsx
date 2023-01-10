@@ -56,11 +56,11 @@ export const ContentContact = () => {
     <div className="flex justify-center mt-6  ">
     <div className='   w-full   lg:mt-[8rem]'>
      <h1 className='ml-8 text-5xl text-start font-mono'>Contactame!</h1>
-      <p className='m-10 text-start font-mono text-lg'>If you would like to explore working with me, say hello, or perhaps order a print, contact me via the form, or dial 0723885226.
+      <p className='m-10 text-start font-mono text-lg'>Si desea explorar trabajar conmigo, contactame por algunas de mis redes sociales o  comuníquese conmigo a través del formulario.
 </p>
       <p className='m-10 text-start font-mono text-lg'>Nos vemos.</p>
       <ul className='text-start ml-9'>
-        <li className=' font-mono'>Instagram: Owlygraph</li>
+        <li className=' font-mono'>Instagram: <span className='text-red-600 text-lg'><a href="https://www.instagram.com/owlygraph/" target="_blank"> Owlygraph</a></span> </li>
         <li className=' font-mono'>Email: owlygraph@gmail.com</li>
       </ul>
       

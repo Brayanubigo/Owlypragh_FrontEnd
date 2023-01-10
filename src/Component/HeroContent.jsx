@@ -6,7 +6,8 @@ const HeroContent = () => {
 <>
 
 <div className="grid md:grid-cols-1 lg:grid-cols-2 scale-y-100
-   w-full h-[42rem] p-6  bg-black bg-hero-pattern bg-center bg-cover hover:bg-hero-2
+   w-full h-[42rem] p-6  bg-black bg-[url('https://res.cloudinary.com/dc6hf7xwx/image/upload/v1673391988/paisaje2_iwvcoq.jpg')] bg-center bg-cover
+    hover:bg-[url('https://res.cloudinary.com/dc6hf7xwx/image/upload/v1673391967/inicio_tpheec.jpg')]
  "> 
 
 

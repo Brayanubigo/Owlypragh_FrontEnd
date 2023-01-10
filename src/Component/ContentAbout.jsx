@@ -13,7 +13,7 @@ export const ContentAbout = () => {
       </div>
       <div className='   w-full   lg:mt-52'>
      <h1 className='text-5xl text-center font-mono'>Hola, Mi nombre es <span className=' text-slate-800'> Owlyprah </span></h1>
-      <p className='m-10 text-start font-mono text-lg'>Estoy viviendo en antofagasta, The forest is where I like to spend a lot of time and photo creativity. I love capturing moments, whether it's humans, storms or wildlife.</p>
+      <p className='m-10 text-start font-mono text-lg'>Soy oriundo de quillota, actualmente vivo en antofagasta, soy un fotografo en formacion de hace ya 6 años, de los cuales profesionalmente y laboralmente 3 años eh trabajo como fotografo, asistente de camara y subdirector de escena, me encanta la fotografia de vehiculos pricipalmente.</p>
       <p className='m-10 text-start font-mono text-lg'>¡Contactame si tienes alguna duda!</p>
       </div>
       </div>
