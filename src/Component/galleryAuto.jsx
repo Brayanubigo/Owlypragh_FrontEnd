@@ -30,7 +30,7 @@ function galleryAuto() {
   
         setImages(res.data) 
        
-        obtenerImagenes()
+     
     }
 
 

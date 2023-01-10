@@ -30,7 +30,7 @@ function galleryPjs() {
   
         setImages(res.data) 
        
-        obtenerImagenes()
+        
     }
 
 

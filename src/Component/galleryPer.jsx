@@ -30,7 +30,7 @@ function galleryPer() {
   
         setImages(res.data) 
        
-        obtenerImagenes()
+       
     }
 
 
