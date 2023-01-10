@@ -1,7 +1,7 @@
 import { useState} from 'react'
 import avatar from '../assets/avatar.jpg'
 import Alerta from "./alerta"
-import clienteAxios from '../config/axios'
+
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 
@@ -28,8 +28,9 @@ const ContactHero = () => {
     }
     setAlerta({});
     try{
-      emailjs.sendForm('service_x3997a8', 'template_n6g6m0o', e.target, 'X5zHYYE_N-Z9EkKUg')
+      emailjs.sendForm(import.meta.env.VITE_SERVICE_EMAIL,import.meta.env.VITE_TEMPLATE_EMAIL, e.target, import.meta.env.VITE_KEY_EMAIL)
       .then((result) => {
+       console.log(import.meta.env.SERVICE_EMAIL)
         Swal.fire({
           title: 'Enviado!',
           text: 'Su correo fue enviado!',
@@ -44,6 +45,7 @@ const ContactHero = () => {
       });
     }
   catch(error){
+    
     console.log(error)
   }
   }  
