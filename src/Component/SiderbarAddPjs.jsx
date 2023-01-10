@@ -40,7 +40,7 @@ const SidebarAddPjs = () => {
 
       setImages(res.data) 
      
-      obtenerImagenes()
+    
   }
   
   async function  eliminarFoto(id) { 
@@ -88,7 +88,7 @@ const SidebarAddPjs = () => {
           timer: 2000
         })
         setFile([])    
-      
+        obtenerImagenes()
     }).catch((err)=>{
       Swal.fire({
         position: 'center',

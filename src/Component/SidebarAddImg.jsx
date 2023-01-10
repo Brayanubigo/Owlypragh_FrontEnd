@@ -37,10 +37,11 @@ const SidebarAddImg = () => {
 
   
   async function  obtenerImagenes() { 
+    
     const res = await clienteAxios.get('/image/showtable')
 
       setImages(res.data) 
-      obtenerImagenes()
+      
     
   }
   
@@ -89,7 +90,7 @@ const SidebarAddImg = () => {
           timer: 2000
         })
         setFile([])    
-      
+        obtenerImagenes()
     }).catch((err)=>{
       Swal.fire({
         position: 'center',
@@ -187,7 +188,7 @@ const SidebarAddImg = () => {
        
     </label>
 </div>
-<button className=" my-4 w-full h-12 inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" onClick={handleSubmitImage}>Enviar</button>
+<button className=" my-4 w-full h-12 inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" onClick={ handleSubmitImage}>Enviar</button>
 <h2 className="text-center font-bold text-2xl">Previsualizacion a subir</h2>
 <div className="flex">
   
