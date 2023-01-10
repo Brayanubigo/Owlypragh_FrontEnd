@@ -53,26 +53,7 @@ const ContactHero = () => {
 
 
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
 
-   
-    
-    try {
-     const res  = await clienteAxios.post('/send-email', { nombre, email,asunto })
-     resetForm();
-     console.log(res.data)
-     
-     
-     
-   
-
-    }
-    
-    catch(error){
-      console.log(error)
-    }
-  }
   const { msg } = alerta
   return (
     <>

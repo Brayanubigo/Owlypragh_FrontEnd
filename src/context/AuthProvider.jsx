@@ -25,7 +25,7 @@ const AuthProvider = ({children}) => {
         }
 
         try {
-            const {data} = await clienteAxios('/perfil' ,config)
+            const {data} = await clienteAxios('/admin/perfil' ,config)
             
             setAuth(data)
         } catch (error) {

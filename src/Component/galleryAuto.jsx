@@ -12,7 +12,7 @@ import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Video from "yet-another-react-lightbox/plugins/video";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
-
+import clienteAxios from '../config/axios';
 function galleryAuto() {
  
     const [images, setImages] = useState([])
@@ -32,7 +32,7 @@ function galleryAuto() {
   
     
     async function  obtenerImagenes() { 
-      const res = await axios.get('http://localhost:4000/image/showtable')
+      const res = await clienteAxios.get('/image/showtable')
   
         setImages(res.data) 
        

@@ -15,7 +15,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-
+import clienteAxios from "../config/axios";
 
 
 
@@ -35,7 +35,7 @@ const SidebarAddPer = () => {
 
   
   async function  obtenerImagenes() { 
-    const res = await axios.get('http://localhost:4000/image/showPer')
+    const res = await clienteAxios.get('/image/showPer')
 
       setImages(res.data) 
      
@@ -43,7 +43,7 @@ const SidebarAddPer = () => {
   }
   
   async function  eliminarFoto(id) { 
-    const res = await axios.get(`http://localhost:4000/image/deleteper/${id}`).then((res) =>{
+    const res = await clienteAxios.get(`/image/deleteper/${id}`).then((res) =>{
       console.log(res.data)
       
       Swal.fire({
@@ -70,13 +70,13 @@ const SidebarAddPer = () => {
 
   const handleSubmitImage = async (e) => {
     
-    const url = 'http://localhost:4000/image/uploadPer'
+   
     let formData = new FormData()
     formData.append('file', file)
     Array.from(file).forEach(file =>{
       formData.append('file', file)
     })
-    await axios.post(url, formData).then((res) =>{
+    await clienteAxios.post('/image/uploadPer', formData).then((res) =>{
       console.log(res.data)
       
       Swal.fire({

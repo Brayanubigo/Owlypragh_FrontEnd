@@ -2,7 +2,7 @@ import {useEffect, useState} from 'react'
 
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
-import axios from 'axios';
+import clienteAxios from '../config/axios';
 function galleryPer() {
  
     const [images, setImages] = useState([])
@@ -14,7 +14,7 @@ function galleryPer() {
   
     
     async function  obtenerImagenes() { 
-      const res = await axios.get('http://localhost:4000/image/showPer')
+      const res = await clienteAxios.get('/image/showPer')
   
         setImages(res.data) 
        

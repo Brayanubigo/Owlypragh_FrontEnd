@@ -15,7 +15,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-
+import clienteAxios from "../config/axios";
 
 
 
@@ -35,7 +35,7 @@ const SidebarAddImg = () => {
 
   
   async function  obtenerImagenes() { 
-    const res = await axios.get('http://localhost:4000/image/showtable')
+    const res = await clienteAxios.get('/image/showtable')
 
       setImages(res.data) 
       obtenerImagenes()
@@ -43,7 +43,7 @@ const SidebarAddImg = () => {
   }
   
   async function  eliminarFoto(id) { 
-    const res = await axios.get(`http://localhost:4000/image/delete/${id}`).then((res) =>{
+    const res = await clienteAxios.get(`/image/delete/${id}`).then((res) =>{
       console.log(res.data)
       
       Swal.fire({
@@ -70,13 +70,13 @@ const SidebarAddImg = () => {
 
   const handleSubmitImage = async (e) => {
     
-    const url = 'http://localhost:4000/image/upload'
+    
     let formData = new FormData()
     formData.append('file', file)
     Array.from(file).forEach(file =>{
       formData.append('file', file)
     })
-    await axios.post(url, formData).then((res) =>{
+    await clienteAxios.post('/image/upload', formData).then((res) =>{
       console.log(res.data)
       
       Swal.fire({
@@ -116,11 +116,11 @@ const SidebarAddImg = () => {
   
     return (
     <>
-            <div className="flex ">
+            <div className="flex  ">
       <div
         className={`  ${
-          open ? "lg:w-72 " : "w-20 "
-        } bg-gradient-to-r from-slate-700 via-zinc-700 to-slate-900 p-5  pt-8 relative duration-300`}
+          open ? "lg:w-72  " : "w-20 "
+        }  bg-gradient-to-r from-slate-700 via-zinc-700 to-slate-900 p-5  pt-8 relative duration-300`}
       >
         <img
           src={control}

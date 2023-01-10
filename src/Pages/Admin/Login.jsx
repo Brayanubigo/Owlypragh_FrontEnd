@@ -28,7 +28,7 @@ const Login = () => {
     //iniciar sesion
     try {
 
-      const { data } = await clienteAxios.post('/login', { nombre, password })
+      const { data } = await clienteAxios.post('/admin/login', { nombre, password })
       localStorage.setItem('token', data.token)
      
       setAuth(data)
