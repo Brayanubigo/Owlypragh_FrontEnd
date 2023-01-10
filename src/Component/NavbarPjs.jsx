@@ -5,8 +5,7 @@ import { Bars3Icon, LinkIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Logo from '../assets/owlylogo_negro.png'
 import { Link } from 'react-router-dom' 
 import 'animate.css';
-import image from '../Fotos buffon prueba/sobre mi.jpg'
-
+import image from '../Fotos buffon prueba/paisaje-urbex.jpg'
 const navigation = [
   { name: 'Inicio', href: '/inicio' },
   { name: 'Sobre mi', href: '/about' },
@@ -20,7 +19,7 @@ const navigation = [
 
 
 
-export default function Navbar() {
+export default function NavbarPjs() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
 
@@ -28,11 +27,11 @@ export default function Navbar() {
 
   return (
     <>
-    <div className="    " >
+    <div className="  relative " >
         
     <div className=" relative  overflow-hidden lg:h-[44rem]  ">
   <div className=' container py-10 px-10 mx-0 min-w-full flex flex-col items-center absolute '>
-      <h1 className=' relative  text-5xl font-mono lg:py-[15rem]  max-[640px]:hidden sm:py-[9rem] text-white'>¿Quien soy?</h1>
+      <h1 className=' relative  text-5xl font-mono lg:py-[15rem]  max-[640px]:hidden sm:py-[9rem] text-white  '>Paisajes/Urbex</h1>
    
     </div>
       <img
@@ -47,7 +46,9 @@ export default function Navbar() {
 
 
 </div>
-      
+
+
+
       <div className="">
         <div>
           <nav className="flex h-10   justify-between lg:justify-items-center absolute inset-x-0 top-0 mt-6 font-mono " aria-label="Global">

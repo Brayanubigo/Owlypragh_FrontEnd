@@ -3,11 +3,11 @@ import useAuth from "../hook/useAuth"
 import React, { useState, useEffect } from "react";
 import logo from '../assets/owlylogo_negro.png'
 import control from '../assets/control.png'
-import clienteAxiosimage from '../config/axios'
-import { GoDashboard, GoDiffAdded, GoSignOut, GoPerson } from "react-icons/go";
+
+import { GoSquirrel, GoDiffAdded, GoSignOut, GoPerson } from "react-icons/go";
 import Swal from 'sweetalert2'
 import axios from "axios";
-import { data } from "autoprefixer";
+
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -16,6 +16,8 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import clienteAxios from "../config/axios";
+
+import FooterAdm from "./FooterAdm";
 
 
 
@@ -107,8 +109,8 @@ const SidebarAddImg = () => {
   const Menus = [
   
     { title: "Imagenes Auto", icon: <GoDiffAdded/> ,link: '/admin'},
-    { title: "Imagenes Personas", icon: <GoDiffAdded/> ,link: '/admin/persona'},
-   
+    { title: "Imagenes Personas", icon: <GoPerson/> ,link: '/admin/persona'},
+    { title: "Imagenes Paisaje", icon: <GoSquirrel/> ,link: '/admin/paisaje'},
     { title: "Cerrar Sesion", icon: <GoSignOut/> , onclick: cerrarSesion }
     
   ];
@@ -120,7 +122,7 @@ const SidebarAddImg = () => {
       <div
         className={`  ${
           open ? "lg:w-72  " : "w-20 "
-        }  bg-gradient-to-r from-slate-700 via-zinc-700 to-slate-900 p-5  pt-8 relative duration-300`}
+        } h-auto  bg-gradient-to-r from-slate-700 via-zinc-700 to-slate-900 p-5 relative  pt-8 no duration-300`}
       >
         <img
           src={control}
@@ -160,10 +162,10 @@ const SidebarAddImg = () => {
       </div>
 
 
-      <div className="  mx-auto flex-auto p-7 justify-center">
+      <div className=" flex-auto mx-auto  p-7 justify-center">
      
       <div className="flex justify-center">
-    <h1 className="container mx-auto font-bold text-center ">AGREGAR IMAGEN</h1>
+    <h1 className="container mx-auto font-bold text-center ">AGREGAR IMAGEN AUTO</h1>
     </div>
   
     <div className="w-full mx-auto my-6 ">
@@ -201,7 +203,7 @@ const SidebarAddImg = () => {
   
 
 </div>
-<div className="grid grid-cols-1">
+<div className="grid grid-cols-1 ">
 
 <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
@@ -240,7 +242,13 @@ const SidebarAddImg = () => {
 
 
       </div>
+
+     
     </div>
+ 
+    <FooterAdm/>
+ 
+    
       </>
   )
 }

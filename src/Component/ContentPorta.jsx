@@ -45,7 +45,7 @@ const ContentPorta = () => {
       cursor-pointer 
      transform 
     transition duration-500 hover:scale-110">
-    <Link to="">
+    <Link to="/GPAISAJES">
     <img src={fondo3} alt="" />
     </Link>
  

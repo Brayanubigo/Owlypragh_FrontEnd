@@ -54,7 +54,7 @@ export default function NavbarPorta() {
            
            
             <div className="flex lg:min-w-0 lg:flex-1 " aria-label="Global">
-              <Link to='/' className="-m-1.5 p-1.5 lg:hidden ">
+              <Link to='/inicio' className="-m-1.5 p-1.5 lg:hidden ">
                 <span className="sr-only">Buffon</span>
                 <img className="h-12 rounded-full" src={Logo} alt="" />
               </Link>
@@ -101,14 +101,14 @@ export default function NavbarPorta() {
             <Dialog.Panel focus="true" className="fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden">
               <div className="flex h-9 items-center justify-between">
                 <div className="flex ">
-                  <a href="#" className="-m-1.5 p-1.5 ">
+                  <Link to="/inicio" className="-m-1.5 p-1.5 ">
                     <span className="sr-only">Your Company</span>
                     <img
                       className="h-12 rounded-full"
                       src={Logo}
                       alt=""
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div className="flex">
                   <button

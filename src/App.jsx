@@ -11,10 +11,12 @@ import Portafolio from './Pages/portafolio.jsx';
 import Contact from './Pages/contact.jsx';
 import Gauto from './Pages/autos'
 import Gpersona from './Pages/personas'
+import Gpaisaje from './Pages/paisajes'
 
 import ImagenAdd from './Pages/Admin/ImagenAdd';
 import ImagenPer from './Pages/Admin/ImagenAddPer'
 import { AuthProvider } from './context/AuthProvider';
+import ImagenAddPjs from './Pages/Admin/ImagenAddPjs.jsx';
 
 
 function App() {
@@ -38,10 +40,11 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/GAUTO' element={<Gauto />} />
           <Route path='/GPERSONA' element={<Gpersona />} />
-
+          <Route path='/GPAISAJES' element={<Gpaisaje />} />
           <Route path='/admin' element={<Rutaprotegida />}>
             <Route index element={<ImagenAdd />} />
             <Route path='persona' element={<ImagenPer />} />
+            <Route path='paisaje' element={<ImagenAddPjs />} />
           </Route>
 
         </Routes>

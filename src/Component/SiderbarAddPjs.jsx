@@ -22,7 +22,7 @@ import FooterAdm from "./FooterAdm";
 
 
 
-const SidebarAddPer = () => {
+const SidebarAddPjs = () => {
   const {cerrarSesion} = useAuth()
   const [file, setFile] = useState([])
   const [currentImage, setCurrtenImage] = useState();
@@ -36,7 +36,7 @@ const SidebarAddPer = () => {
 
   
   async function  obtenerImagenes() { 
-    const res = await clienteAxios.get('/image/showPer')
+    const res = await clienteAxios.get('/image/showPjs')
 
       setImages(res.data) 
      
@@ -44,7 +44,7 @@ const SidebarAddPer = () => {
   }
   
   async function  eliminarFoto(id) { 
-    const res = await clienteAxios.get(`/image/deleteper/${id}`).then((res) =>{
+    const res = await clienteAxios.get(`/image/deletepjs/${id}`).then((res) =>{
       console.log(res.data)
       
       Swal.fire({
@@ -77,7 +77,7 @@ const SidebarAddPer = () => {
     Array.from(file).forEach(file =>{
       formData.append('file', file)
     })
-    await clienteAxios.post('/image/uploadPer', formData).then((res) =>{
+    await clienteAxios.post('/image/uploadPjs', formData).then((res) =>{
       console.log(res.data)
       
       Swal.fire({
@@ -120,8 +120,8 @@ const SidebarAddPer = () => {
             <div className="flex ">
       <div
         className={`  ${
-          open ? "lg:w-72 h-auto " : "w-20 "
-        }  bg-gradient-to-r from-slate-700 via-zinc-700 to-slate-900 p-5  pt-8 relative duration-300`}
+          open ? "lg:w-72  " : "w-20 "
+        } h-auto bg-gradient-to-r from-slate-700 via-zinc-700 to-slate-900 p-5  pt-8 relative duration-300`}
       >
         <img
           src={control}
@@ -164,7 +164,7 @@ const SidebarAddPer = () => {
       <div className="  mx-auto flex-auto p-7 justify-center">
      
       <div className="flex justify-center">
-    <h1 className="container mx-auto font-bold text-center ">AGREGAR IMAGEN PERSONA</h1>
+    <h1 className="container mx-auto font-bold text-center ">AGREGAR IMAGEN PAISAJE</h1>
     </div>
   
     <div className="w-full mx-auto my-6 ">
@@ -247,4 +247,4 @@ const SidebarAddPer = () => {
   )
 }
 
-export default SidebarAddPer;
+export default SidebarAddPjs;

@@ -3,16 +3,10 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
-import axios from 'axios';
-import Modal from '@mui/material/Modal';
-import { width } from '@mui/system';
-import Captions from "yet-another-react-lightbox/plugins/captions";
-import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
-import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
-import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
-import Video from "yet-another-react-lightbox/plugins/video";
-import Zoom from "yet-another-react-lightbox/plugins/zoom";
+
 import clienteAxios from '../config/axios';
+import Masonry from '@mui/lab/Masonry';
+
 function galleryAuto() {
  
     const [images, setImages] = useState([])
@@ -72,17 +66,17 @@ function galleryAuto() {
     }
 
 
-    <div className="grid grid-cols-1 mt-[3rem] mx-[15rem] ">
+    <div className="grid grid-cols-1 mt-[3rem] lg:px-[15rem] px-2 ">
     
         
-    <ImageList variant="masonry" cols={3} gap={20}>
+    <Masonry   columns={{xs:1,sm:2 ,md:3}}  >
   {images.map((item, i) => (
     
     <>
 
 
 
-    <ImageListItem key={i}>
+   
     <img
         className='cursor-pointer'
         src={`${item.imageURL}?w=248&fit=crop&auto=format`}
@@ -94,10 +88,10 @@ function galleryAuto() {
 
    
       
-    </ImageListItem>
+  
     </>
   ))}
-</ImageList>
+</Masonry>
 
 
 

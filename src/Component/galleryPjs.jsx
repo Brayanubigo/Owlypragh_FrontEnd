@@ -7,7 +7,7 @@ import ImageListItem from '@mui/material/ImageListItem';
 import clienteAxios from '../config/axios';
 import Masonry from '@mui/lab/Masonry';
 
-function galleryPer() {
+function galleryPjs() {
  
     const [images, setImages] = useState([])
     const [open, setOpen] = useState(false);
@@ -26,7 +26,7 @@ function galleryPer() {
   
     
     async function  obtenerImagenes() { 
-      const res = await clienteAxios.get('/image/showPer')
+      const res = await clienteAxios.get('/image/showPjs')
   
         setImages(res.data) 
        
@@ -106,4 +106,4 @@ function galleryPer() {
   )
 }
 
-export default galleryPer
+export default galleryPjs

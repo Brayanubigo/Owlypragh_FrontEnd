@@ -36,7 +36,7 @@ export default function Navbar() {
   <div className="carousel-inner relative w-full overflow-hidden min-[1224px]:h-screen ">
     <div className="  carousel-item active relative float-left w-full ">
     <div class="container    mx-0 min-w-full flex flex-col items-center absolute  max-[500px]:mt-[9rem] max-[640px]:mt-[13rem] sm:mt-[15rem] md:mt-[18rem] min-[1024px]:mt-[22rem] 2xl:mt-[29rem]   max-[374px]:hidden ">
-    <Link to="/about">
+    <Link to="/GPAISAJES">
       <button className="hover:-translate-y-1 hover:scale-110 bg-transparent hover:bg-gray-900 text-white 
        hover:text-white py-2 px-10 border  border-white hover:border-transparent md:w-60 md:h-20 lg:w-60 lg:h-20 font-mono transition ease-in-out delay-150"> Paisaje </button>
       </Link>
@@ -154,14 +154,15 @@ export default function Navbar() {
             <Dialog.Panel focus="true" className="fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden">
               <div className="flex h-9 items-center justify-between">
                 <div className="flex ">
-                  <a href="#" className="-m-1.5 p-1.5 ">
+                  <Link to="/inicio" className="-m-1.5 p-1.5 ">
                     <span className="sr-only">Your Company</span>
+                   
                     <img
                       className="h-12 rounded-full"
                       src={Logo}
                       alt=""
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div className="flex">
                   <button
