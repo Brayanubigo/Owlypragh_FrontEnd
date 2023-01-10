@@ -35,7 +35,7 @@ export default function Navbar() {
          <div id="carouselExampleControls" className="carousel slide relative  " data-bs-ride="carousel">
   <div className="carousel-inner relative w-full overflow-hidden min-[1224px]:h-screen ">
     <div className="  carousel-item active relative float-left w-full ">
-    <div class="container    mx-0 min-w-full flex flex-col items-center absolute  max-[500px]:mt-[9rem] max-[640px]:mt-[13rem] sm:mt-[15rem] md:mt-[18rem] min-[1024px]:mt-[22rem] 2xl:mt-[29rem]   max-[374px]:hidden ">
+    <div className="container    mx-0 min-w-full flex flex-col items-center absolute  max-[500px]:mt-[9rem] max-[640px]:mt-[13rem] sm:mt-[15rem] md:mt-[18rem] min-[1024px]:mt-[22rem] 2xl:mt-[29rem]   max-[374px]:hidden ">
     <Link to="/GPAISAJES">
       <button className="hover:-translate-y-1 hover:scale-110 bg-transparent hover:bg-gray-900 text-white 
        hover:text-white py-2 px-10 border  border-white hover:border-transparent md:w-60 md:h-20 lg:w-60 lg:h-20 font-mono transition ease-in-out delay-150"> Paisaje </button>
@@ -51,7 +51,7 @@ export default function Navbar() {
     </div>
 
     <div className="carousel-item relative float-left w-full">
-    <div class="container    mx-0 min-w-full flex flex-col items-center absolute  max-[500px]:mt-[9rem] max-[640px]:mt-[13rem] sm:mt-[15rem] md:mt-[18rem] min-[1024px]:mt-[22rem] 2xl:mt-[29rem]   max-[374px]:hidden ">
+    <div className="container    mx-0 min-w-full flex flex-col items-center absolute  max-[500px]:mt-[9rem] max-[640px]:mt-[13rem] sm:mt-[15rem] md:mt-[18rem] min-[1024px]:mt-[22rem] 2xl:mt-[29rem]   max-[374px]:hidden ">
     <Link to="/GPERSONA">
       <button className="hover:-translate-y-1 hover:scale-110 bg-transparent hover:bg-gray-900 text-white 
        hover:text-white py-2 px-10 border  border-white hover:border-transparent md:w-60 md:h-20 lg:w-60 lg:h-20 font-mono transition ease-in-out delay-150"> Personas</button>
@@ -64,7 +64,7 @@ export default function Navbar() {
       />
     </div>
     <div className="carousel-item relative float-left w-full">
-     <div class="container  mx-0 min-w-full flex flex-col items-center absolute  max-[500px]:mt-[9rem] max-[640px]:mt-[13rem] sm:mt-[15rem] md:mt-[18rem] min-[1024px]:mt-[22rem] 2xl:mt-[29rem]   max-[374px]:hidden ">
+     <div className="container  mx-0 min-w-full flex flex-col items-center absolute  max-[500px]:mt-[9rem] max-[640px]:mt-[13rem] sm:mt-[15rem] md:mt-[18rem] min-[1024px]:mt-[22rem] 2xl:mt-[29rem]   max-[374px]:hidden ">
     <Link to="/GAUTO">
       <button className="hover:-translate-y-1 hover:scale-110 bg-transparent hover:bg-gray-900 text-white 
        hover:text-white py-2 px-10 border  border-white hover:border-transparent md:w-60 md:h-20 lg:w-60 lg:h-20 font-mono transition ease-in-out delay-150 "> Automovil</button>
@@ -80,22 +80,22 @@ export default function Navbar() {
   
  
   <button
-    class="carousel-control-prev absolute top-52 lg:top-0 bottom-0   flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+    className="carousel-control-prev absolute top-52 lg:top-0 bottom-0   flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
     type="button"
     data-bs-target="#carouselExampleControls"
     data-bs-slide="prev"
   >
-    <span class="carousel-control-prev-icon inline-block bg-no-repeat "  aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
+    <span className="carousel-control-prev-icon inline-block bg-no-repeat "  aria-hidden="true"></span>
+    <span className="visually-hidden">Previous</span>
   </button>
   <button
-    class="carousel-control-next lg:top-0 absolute top-52 bottom-0  flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+    className="carousel-control-next lg:top-0 absolute top-52 bottom-0  flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
     type="button"
     data-bs-target="#carouselExampleControls"
     data-bs-slide="next"
   >
-    <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
+    <span className="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+    <span className="visually-hidden">Next</span>
   </button>
 
   </div>
