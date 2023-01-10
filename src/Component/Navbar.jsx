@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 import 'animate.css';
 
 import image1 from '../Fotosbuffonprueba/paisaje-urbex.jpg'
-import image2 from '../Fotosbuffonprueba/Personas.jpg'
+import image2 from '../Fotosbuffonprueba/personas.jpg'
 import image3 from '../Fotosbuffonprueba/auto.jpg'
 
 
