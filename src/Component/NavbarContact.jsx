@@ -5,7 +5,7 @@ import { Bars3Icon, LinkIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Logo from '../assets/owlylogo_negro.png'
 import { Link } from 'react-router-dom' 
 import 'animate.css';
-import image from '../Fotos buffon prueba/contacto.jpg'
+import image from '../Fotosbuffonprueba/contacto.jpg'
 const navigation = [
   { name: 'Inicio', href: '/inicio' },
   { name: 'Sobre mi', href: '/about' },

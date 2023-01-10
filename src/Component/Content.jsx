@@ -1,7 +1,7 @@
 import React from 'react'
-import fondo1 from '../Fotos buffon prueba/autocubo.jpg'
-import fondo2 from '../Fotos buffon prueba/personacubo.jpg'
-import fondo3 from '../Fotos buffon prueba/paisajecubo.jpg'
+import fondo1 from '../Fotosbuffonprueba/autocubo.jpg'
+import fondo2 from '../Fotosbuffonprueba/personacubo.jpg'
+import fondo3 from '../Fotosbuffonprueba/paisajecubo.jpg'
 import { Link } from 'react-router-dom'
 const Content = () => {
   return (

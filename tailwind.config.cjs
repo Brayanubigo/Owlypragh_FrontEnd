@@ -12,8 +12,8 @@ module.exports = {
         '128': '60rem',
       },
       backgroundImage: {
-        'hero-pattern': "url('./src/Fotos buffon prueba/paisaje2.jpg')",
-        'hero-2': "url('./src/Fotos buffon prueba/inicio.jpg')",
+        'hero-pattern': "url('./src/Fotosbuffonprueba/paisaje2.jpg')",
+        'hero-2': "url('./src/Fotosbuffonprueba/inicio.jpg')",
       }
     },
     

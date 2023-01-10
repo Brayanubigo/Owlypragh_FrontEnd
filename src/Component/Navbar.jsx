@@ -6,9 +6,9 @@ import Logo from '../assets/owlylogo_negro.png'
 import { Link } from 'react-router-dom' 
 import 'animate.css';
 
-import image1 from '../Fotos buffon prueba/paisaje-urbex.jpg'
-import image2 from '../Fotos buffon prueba/Personas.jpg'
-import image3 from '../Fotos buffon prueba/auto.jpg'
+import image1 from '../Fotosbuffonprueba/paisaje-urbex.jpg'
+import image2 from '../Fotosbuffonprueba/Personas.jpg'
+import image3 from '../Fotosbuffonprueba/auto.jpg'
 
 
 const navigation = [
