@@ -6,6 +6,7 @@ import ImageListItem from '@mui/material/ImageListItem';
 
 import clienteAxios from '../config/axios';
 import Masonry from '@mui/lab/Masonry';
+import { Hidden } from '@mui/material';
 
 function galleryAuto() {
  
@@ -32,27 +33,47 @@ function galleryAuto() {
        
      
     }
-
+   
 
     
     const viewImage = (img,i) =>{
       setModal({img,i})
     }
  
+    
+
+    const slides = images.map(({ src, key, width, height, images }) => ({
+      src,
+      key,
+      width,
+      height,
+      srcSet: images?.map((image) => ({
+        src: image.imageURL,
+        width: image.width,
+        height: image.height
+      }))
+    }));
+
  
+    
     return (
     
     <>
     
     {
-     modal.img &&   
+     modal.img && 
      <div className='flex mx-0  bg-black content-center justify-center items-center overflow-hidden'>
     <Lightbox
         open={open}
         close={() => setOpen(false)}
+        controller={{closeOnBackdropClick: true, focus:true , touchAction: "none"}}
+        styles={{button:Hidden}}
         slides={[
-          { src: `${modal.img}` },
-        
+          { src: `${modal.img}`
+    
+      }
+         
+
         ]}
 
        

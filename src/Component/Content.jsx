@@ -13,7 +13,9 @@ const Content = () => {
      bg-gray-100 cursor-pointer 
      transform 
     transition duration-500 hover:scale-110 h-[32rem]">
+    <Link to="/GAUTO" className='w-full h-full'>
     <img className='w-full h-full object-cover' src={fondo1} alt="" />
+    </Link>
     <div className='flex items-center absolute mt-0 py-0 my-0 '>
     <Link to="/GAUTO">
     <h1 className='text-center mt-[13rem] text-white text-4xl border-2 border-black hover:bg-black transform 
@@ -29,7 +31,10 @@ const Content = () => {
      bg-gray-100 cursor-pointer 
      transform 
     transition duration-500 hover:scale-110 h-[32rem]">
+     <Link to="/GPERSONA" className='w-full h-full'>
     <img className='w-full h-full object-cover' src={fondo2} alt="" />
+    
+    </Link>
     <div className='flex items-center absolute mt-0 py-0 my-0 '>
     <Link to="/GPERSONA">
     <h1 className='text-center mt-[13rem] text-white text-4xl border-2 border-black hover:bg-black  transform 
@@ -39,16 +44,18 @@ const Content = () => {
    
     </div>
     
-    <div className="flex justify-center text-6xl    bg-gray-100
-    cursor-pointer 
-    transform 
-   transition duration-500 hover:scale-110 h-[32rem]">
-    <img  className="w-full object-cover" src={fondo3} alt="" />
-
+    <div className="flex justify-center text-6xl 
+     bg-gray-100 cursor-pointer 
+     transform 
+    transition duration-500 hover:scale-110 h-[32rem]">
+     <Link to="/GPAISAJES" className='w-full h-full'>
+    <img className='w-full h-full object-cover' src={fondo3} alt="" />
+    
+    </Link>
     <div className='flex items-center absolute mt-0 py-0 my-0 '>
     <Link to="/GPAISAJES">
-    <h1 className='text-center mt-[13rem] text-black text-4xl border-2 border-black hover:bg-white  transform 
-     transition duration-500 hover:scale-110  border-solid w-[15rem] py-3 font-mono'>Paisajes</h1>
+    <h1 className='text-center mt-[13rem] text-white text-4xl border-2 border-black hover:bg-black  transform 
+     transition duration-500 hover:scale-110  border-solid w-[15rem] py-3 font-mono'>Personas</h1>
   </Link>
     </div>
     </div>
